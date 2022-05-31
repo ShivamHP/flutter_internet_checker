@@ -1,16 +1,11 @@
 # internet_connectivity_checker
 
-A new Flutter project.
+Easy way to check internet connectivity in Flutter.
 
-## Getting Started
+## The idea used in brief:
 
-This project is a starting point for a Flutter application.
+A stream is being created which would constantly check if the app is able to get connected to google.com. This stream is being used in a StreamBuilder.
 
-A few resources to get you started if this is your first Flutter project:
+## Drawbacks
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If Google goes down, the internet connectivity will always be "NOT_CONNECTED"
